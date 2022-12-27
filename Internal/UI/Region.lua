@@ -327,7 +327,7 @@ function Region.Begin(id, options)
 		DrawCommands.Rectangle('fill', instance.X, instance.Y, instance.W, instance.H, options.BgColor or Style.WindowBackgroundColor, options.Rounding or 0)
 	end
 	if not options.NoOutline then
-		DrawCommands.Rectangle('line', instance.X, instance.Y, instance.W, instance.H, nil, options.Rounding or 0)
+		DrawCommands.Rectangle('line', instance.X, instance.Y, instance.W, instance.H, Style.OutLineColor, options.Rounding or 0)
 	end
 	DrawCommands.TransformPush()
 	DrawCommands.ApplyTransform(instance.Transform)
